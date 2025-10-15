@@ -6,7 +6,7 @@ let currentReview = 0;
 const name = document.querySelector('.name');
 const job = document.querySelector('.job');
 const text = document.querySelector('.text');
-const img = document.querySelector('img');
+const img = document.querySelector('.avatar');
 
 const nextBtn = document.querySelector('.next');
 const prevBtn = document.querySelector('.prev');
