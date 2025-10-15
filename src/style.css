@@ -17,9 +17,17 @@ h1 {
     line-height: 1.1;
     text-align: center;
     margin: 48px 0 8px;
-    border-bottom: 4px solid #65b3d8;
     display: inline-block;
-    padding-bottom: 8px;
+}
+
+.line{
+    max-width: 100%;
+    width: 30%;
+    height: 4px;
+    background-color: #65b3d8;
+    display: block;
+    align-content: center;
+    margin: 0 auto;
 }
 
 main{
@@ -41,7 +49,7 @@ main{
     padding: 20px;
     gap: 10px;
 }
-.icon&img{
+.icon-img{
     position: relative;
 
 }
@@ -67,6 +75,7 @@ main{
     background-color: #65b3d8;
     border-radius: 50%;
     padding: -10px;
+
 }
 
 .author, .quote{
@@ -110,6 +119,7 @@ main{
 .prev, .next{
     height: 34px;
     width: 34px;
+    cursor: pointer;
 }
 
 .random{

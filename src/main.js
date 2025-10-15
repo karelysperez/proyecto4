@@ -28,8 +28,17 @@ prevBtn.addEventListener('click', () => {
 
 randomBtn.addEventListener('click', randomReview);
 
+
 function randomReview() {
-    currentReview = Math.floor(Math.random() * reviews.length);
+    let previousReview = currentReview;
+    let randomReview;
+    do{
+        randomReview = Math.floor(Math.random() * reviews.length);
+
+    }while (randomReview === previousReview);
+
+    currentReview = randomReview;
+
     showReview(currentReview);
 }
 
