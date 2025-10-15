@@ -1,4 +1,5 @@
 import { reviews } from './Reviews.js';
+import './style.css';
 
 let currentReview = 0;
 

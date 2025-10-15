@@ -1,49 +1,100 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-
 body {
   margin: 0;
   padding: 0;
   display: flex;
   place-items: center;
+  flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
-    background-color: #f3f9fd;
+  background-color: #f3f9fd;
+  gap: 40px;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-  color: #172e34;
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-h2 {
     color: #172e34;
-    font-size: 2em;
+    font-size: 3.2em;
     line-height: 1.1;
+    text-align: center;
+    margin: 48px 0 8px;
+    border-bottom: 4px solid #65b3d8;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 40px  32px;
+    width: 465px;
+    height: 306px;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 0.13);
+}
+.reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
-p{
+.avatar-wrap{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.avatar{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 9px -4px 0 #65b3d8;
+}
+
+.name {
     color: #172e34;
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    margin: 6px 0 0;
+}
+
+.job{
+    margin: 0;
+    color: #65b3d8;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.8em;
+}
+
+.text{
+    color: #484848;
     font-size: 1.2em;
+    font-weight: 300;
     line-height: 1.1;
+    margin: 20px 0 0;
+}
+
+/*Buttons*/
+
+.arrows{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    align-self: center;
+}
+
+.prev{
+    width: 20px;
+    height: 20px;
+}
+
+
+.random{
+
 }
 
